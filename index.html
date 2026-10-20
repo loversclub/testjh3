@@ -2,6 +2,7 @@
 <html lang="ko">
 <head>
 <meta charset="UTF-8">
+<base href="https://loversclub.github.io/testjh4/">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,user-scalable=no">
 <title>이재현의 iPhone 17 pro</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jua&family=Grand+Hotel&family=Noto+Serif+KR:wght@400;600;700&family=Playfair+Display:wght@500&family=Bodoni+Moda:wght@700;900&display=swap">
@@ -950,7 +951,7 @@ maps(){const s=S.s;if(!s.rec)s.rec=['성수다락','■■■ 호텔','■■■
  <div class="sheetm${s.shd?' dn':''}" style="height:auto;padding-bottom:44px"><div class="gr"></div><div class="msh" style="margin-top:2px">즐겨찾기</div><div class="mfav">${fav.map(f=>`<button data-a="none"><span style="background:${f[1]}">${f[2]}</span>${f[0]}</button>`).join('')}</div><div class="msh" style="margin-top:20px">저장한 장소</div>${sv2.map(r=>`<button class="mrow" data-a="none"><span class="mi2" style="background:${r[2]}"><svg width="20" height="20" viewBox="0 0 24 24" fill="#fff"><path d="M12 3.500l2.600 5.400 5.900.8-4.300 4.100 1 5.900L12 16.900 6.800 19.700l1-5.900L3.500 9.700l5.900-.8z"/></svg></span><span style="flex:1"><b>${E(r[0])}</b><small>${r[1]}개 장소</small></span><span style="color:#c7c7cc;font-size:20px">›</span></button>`).join('')}<div class="msh" style="margin-top:20px">최근 간 장소</div><button class="mrow" data-a="none"><span class="mi2" style="background:#ff375f"><svg width="20" height="20" viewBox="0 0 24 24" fill="#fff"><path d="M12 21S3 14.6 3 8.7C3 5.9 5.1 4 7.5 4c1.7 0 3.4 1 4.5 2.6C13.1 5 14.8 4 16.5 4 18.9 4 21 5.9 21 8.7 21 14.6 12 21 12 21z"/></svg></span><span style="flex:1"><b>영훈이집</b><small>11. 17. 방문</small></span><span style="color:#c7c7cc;font-size:20px">›</span></button></div></div>`},
 photos(){const s=S.s;s.tab=s.tab||'alb';
  const G=['#cdd8e6,#8fa3bd','#f1d9cb,#c9a58e','#d3d9c8,#8b9b80','#e0d3ec,#9c8ab8','#f6e4b9,#d9b45e','#c9e6e4,#78b5b0'];
- const ALB=[['카메라',424,['IMG_0292.jpeg','IMG_0291.jpeg','IMG_0290.jpeg','IMG_0295.jpeg','IMG_0296.jpeg','IMG_0297.jpeg','IMG_0298.jpeg','IMG_0303.jpeg','IMG_0299.jpeg']],['내동생',10,['IMG_0305.jpeg','IMG_0306.jpeg','IMG_0307.jpeg','IMG_0308.jpeg','IMG_0309.jpeg','IMG_0310.jpeg','IMG_0311.jpeg','IMG_0312.jpeg','IMG_0313.jpeg']],['여행',219,null,'IMG_0300.jpeg'],['음식',185,null,'IMG_0304.jpeg'],['업무',181,null,'IMG_0303.jpeg']];
+ const ALB=[['카메라',424,['IMG_0292.jpeg','IMG_0291.jpeg','IMG_0290.jpeg','IMG_0295.jpeg','IMG_0296.jpeg','IMG_0297.jpeg','IMG_0298.jpeg','IMG_0303.jpeg','IMG_0299.jpeg']],['내동생',10,['IMG_0305.png','IMG_0306.jpeg','IMG_0307.jpeg','IMG_0308.jpeg','IMG_0309.jpeg','IMG_0310.jpeg','IMG_0311.jpeg','IMG_0312.jpeg','IMG_0313.jpeg']],['여행',219,null,'IMG_0300.jpeg'],['음식',185,null,'IMG_0304.jpeg'],['업무',181,null,'IMG_0303.jpeg']];
  const tile=(e,i)=>{const g=G[i%6].split(',');return `<div style="background:linear-gradient(135deg,${g[0]},${g[1]})">${e}</div>`};
  let top,body;
  if(s.tab==='alb'&&s.al!=null){const A=ALB[s.al];top=`<div class="top"><h1>${A[0]}</h1><span class="ac">선택</span></div>`;body=`<div class="pg">${A[2].map(tile).join('')}</div><div class="pcnt"><b>사진 ${A[1]}장</b></div>`}
